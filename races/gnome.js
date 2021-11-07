@@ -26,6 +26,10 @@ export default gnome = () => {
       // Clockwork Toy: This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents.
       // Fire Starter: The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
       // Music Box: When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed
+    }, {
+      "name": "Deep Gnome",
+      // Ability Score Increase: Increase Dexterity by 1
+      
     }
   ]
 }
