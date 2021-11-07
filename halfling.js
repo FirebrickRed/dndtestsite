@@ -7,7 +7,7 @@ export default const halfling {
   const averageWeight = 40;
   const size = "Small";
   const speed = 25;
-  const hasDarkvision = true;
+  const hasDarkvision = false;
   // Ability Score Increase: Increase Dexterity score by 2
   // Lucky: when you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.
   // Brave: you have advantage on saving throws against being frightened.
