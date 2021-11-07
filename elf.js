@@ -4,7 +4,7 @@ export default const elf {
   const matureAge = 100;
   const oldAge = 750;
   const defaultAlignment = ["Chaos", "Good"];
-  const averageWeight = 150;
+  const averageWeight = 125;
   const size = "Medium";
   const speed = 30;
   const hasDarkvision = true;
