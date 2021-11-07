@@ -1,7 +1,7 @@
 
 export default const dwarf {
   const averageHeight = 4.5;
-  const youngAge = 50;
+  const matureAge = 50;
   const oldAge = 350;
   const defaultAlignment = ["Lawful", "Good"];
   const averageWeight = 150;
