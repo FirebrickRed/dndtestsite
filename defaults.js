@@ -26,3 +26,12 @@ export const races = [
   "Half-Orc",
   "Tiefling",
 ];
+
+export const abilities = [
+  "Strength",
+  "Dexterity",
+  "Constitution",
+  "Intelligence",
+  "Wisdom",
+  "Charisma",
+];
