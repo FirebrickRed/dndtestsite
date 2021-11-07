@@ -1,5 +1,5 @@
 
-export default const human {
+export default human = () => {
   // Ability Score Increase: Increase each of your ability scores by 1
   const averageWeight = 175;
   const matureAge = 17;

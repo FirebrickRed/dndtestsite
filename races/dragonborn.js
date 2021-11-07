@@ -1,5 +1,5 @@
 
-export default const dragonborn {
+export default dragonborn = () => {
   // Ability Score Increase: Increase Strength by 2, and Charisma by 1
   const matureAge = 15;
   const oldAge = 80;
@@ -8,6 +8,7 @@ export default const dragonborn {
   const averageWeight = 250;
   const size = "Medium";
   const speed = 30;
+  const languages = ["Common", "Draconic"];
   
   // Draconic Ancestry: You have draconic ancesty.
   //    Choose one type of dragon from the Draconic Ancestry table
@@ -32,4 +33,5 @@ export default const dragonborn {
   // 4d6 at 11th level,
   // 5d6 at 16th level.
   // after you use your breath weapon, you can't use it again until you complete a short or long rest
+  // Damage Resistance: You have resistance to the damage type associated with your draconic ancestry
 }

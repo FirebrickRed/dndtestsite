@@ -1,5 +1,5 @@
 
-export default const halfling {
+export default halfling = () => {
   const averageHeight = 3;
   const matureAge = 20;
   const oldAge = 250;
