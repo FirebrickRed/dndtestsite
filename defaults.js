@@ -1,41 +1,3 @@
-
-// export const classes = [
-//   "Artificer",
-//   "Barbarian",
-//   "Bard",
-//   "Cleric",
-//   "Druid",
-//   "Fighter",
-//   "Monk",
-//   "Paladin",
-//   "Ranger",
-//   "Rogue",
-//   "Sorcerer",
-//   "Warlock",
-//   "Wizard",
-// ];
-
-// export const races = [
-//   "Dwarf",
-//   "Elf",
-//   "Hafling",
-//   "Human",
-//   "Dragonborn",
-//   "Gnome",
-//   "Half-Elf",
-//   "Half-Orc",
-//   "Tiefling",
-// ];
-
-// export const abilities = [
-//   "Strength",
-//   "Dexterity",
-//   "Constitution",
-//   "Intelligence",
-//   "Wisdom",
-//   "Charisma",
-// ];
-
 const AbilityScore = {
   STRENGTH: 'strength',
   DEXTERITY: 'dexterity',
@@ -43,6 +5,14 @@ const AbilityScore = {
   INTELLIGENCE: 'intelligence',
   WISDOM: 'wisdom',
   CHARISMA: 'charisma',
+}
+
+const Money = {
+  PLATINUM: 'platinum',
+  GOLD: 'gold',
+  ELECTRUM: 'electrum',
+  SILVER: 'silver',
+  COPPER: 'copper',
 }
 
 const Alignment = {
@@ -83,9 +53,43 @@ class Race {
     this.size = Size.MEDIUM;
     this.speed = 30;
     this.language = [Language.COMMON]
+    this.abilityScoreAdjustments = {
+      [AbilityScore.STRENGTH]: 0,
+      [AbilityScore.DEXTERITY]: 0,
+      [AbilityScore.CONSTITUTION]: 0,
+      [AbilityScore.INTELLIGENCE]: 0,
+      [AbilityScore.WISDOM]: 0,
+      [AbilityScore.CHARISMA]: 0,
+    }
+    this.extraLanguages = 0;
+    this.additionalAbilityScore = 0;
+  }
+
+  static setAlignment(alignmentToBeSetTo) {
+    this.defaultAlignment = alignmentToBeSetTo;
+  }
+
+  static setSize(newSize) {
+    this.size = newSize;
+  }
+
+  static setSpeed(newSpeed) {
+    this.speed = newSpeed;
   }
 
   static addLanguage(languageToAdd) {
     this.language = this.language.concat(languageToAdd);
+  }
+
+  static incrementAbilityScore(abilityToIncrement, amountToIncrementBy) {
+    this.abilityScoreAdjustments[abilityToIncrement] += amountToIncrementBy;
+  }
+
+  static addAnotherLanguage(addThisAmount) {
+    this.extraLanguages += addThisAmount;
+  }
+
+  static addToAdditionalAbilityScore(amountToAdd) {
+    this.additionalAbilityScore += amountToAdd;
   }
 }
