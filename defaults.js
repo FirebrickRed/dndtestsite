@@ -93,3 +93,26 @@ class Race {
     this.additionalAbilityScore += amountToAdd;
   }
 }
+
+class CharacterSheet {
+  constructor() {
+    this.race = null;
+    this.class = null;
+    this.level = 0;
+    this.maxHealth = 0;
+    this.armorProficiencies = null;
+    this.weaponProficiencies = null;
+    this.toolProficiency = null;
+    this.savingThrowProficiencies = null;
+    this.skillProficiencies = null;
+    this.abilities = null;
+    this.backpack = null;
+  }
+
+  createCharacter(race, chosenClass) {
+    this.race = chooseRace();
+    this.class = chooseClass();
+    this.maxHealth = setHealth();
+  }
+
+}
