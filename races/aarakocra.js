@@ -1,8 +1,11 @@
+import { Race } from "./index";
+import { AbilityScore, Alignment } from "../defaults";
+
 // All need to add is flight and talons
-class Aarakocra extends Race {
+export class Aarakocra extends Race {
   constructor() {
     super(3, 30, 5, 90);
-    super.addlanguage([Language.AARAKOCRA, Language.AURAN]);
+    // super.addlanguage([Language.AARAKOCRA, Language.AURAN]);
     super.incrementAbilityScore(AbilityScore.DEXTERITY, 2);
     super.incrementAbilityScore(AbilityScore.WISDOM, 1);
     super.setAlignment(Alignment.NEUTRAL_GOOD);
